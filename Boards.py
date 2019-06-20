@@ -97,7 +97,7 @@ board5 = [[0, 2, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3],
           [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
 boards = [board0, board1, board2, board3, board4, board5]
-
+cache = []
 
 class BoardsClass:
 
