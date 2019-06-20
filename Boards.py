@@ -104,4 +104,9 @@ class BoardsClass:
     @staticmethod
     def GetBoard():
         board = random.choice(boards)
+        while board in cache:
+            board = random.choice(boards)
+        if(len(cache) == 4):
+            cache.remove(boards[0])
+        cache.append(board)
         return board
