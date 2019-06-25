@@ -106,7 +106,7 @@ class BoardsClass:
         board = random.choice(boards)
         while board in cache:
             board = random.choice(boards)
-        if(len(cache) == 4):
-            cache.remove(cache[0])
+        if(len(cache) == 3):
+            cache.pop(0)
         cache.append(board)
         return board
